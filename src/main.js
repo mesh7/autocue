@@ -8,6 +8,11 @@ const app = createApp(App);
 app.use(PrimeVue, {
   theme: {
     preset: Aura,
+    options: {
+      prefix: "p",
+      darkModeSelector: ".dark-mode",
+      cssLayer: false,
+    },
   },
 });
 app.mount("#app");
