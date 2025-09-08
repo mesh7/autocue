@@ -18,7 +18,11 @@ const recordAudio = () => {
 
 <template>
   <Card
-    class="w-xl bg-white/30 backdrop-blur-lg rounded-xl p-6 border border-white/40"
+    :pt="{
+      body: {
+        class: 'bg-blue-200 rounded bg-opacity-0',
+      },
+    }"
   >
     <template #content>
       <div class="flex gap-4 justify-center">
@@ -52,4 +56,19 @@ const recordAudio = () => {
   </Card>
 </template>
 
-<style scoped></style>
+<style scoped>
+.primevue-card-with-blur {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Semi-transparent white background */
+  backdrop-filter: blur(
+    8px
+  ); /* Apply blur effect to the background behind the card */
+  border-radius: 10px; /* Optional: rounded corners for the card */
+  padding: 20px;
+  width: 300px;
+}
+</style>
