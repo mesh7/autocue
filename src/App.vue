@@ -1,15 +1,9 @@
-<script setup>
-import ControlPanel from "./components/ControlPanel.vue";
-</script>
+<script setup></script>
 
 <template>
-  <div>
-    <a href="https://mesh7.github.io/autocue/" target="_blank">
-      <img src="/public/autocue-logo.JPG" class="logo" alt="Autocue logo" />
-    </a>
-  </div>
-
-  <ControlPanel msg="Vite + Vue" />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>
