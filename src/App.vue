@@ -1,20 +1,15 @@
 <script setup>
-import router from "./router";
+import router from './router'
 
 const navigateToHomePage = () => {
-  router.push("/");
-};
+  router.push('/')
+}
 </script>
 
 <template>
   <div>
     <header class="pt-6 px-6 bg-white fixed top-0 left-0 right-0 z-50">
-      <img
-        src="./assets/logo_text.svg"
-        alt="Logo"
-        class="logo"
-        @click="navigateToHomePage()"
-      />
+      <img src="./assets/logo_text.svg" alt="Logo" class="logo" @click="navigateToHomePage()" />
     </header>
     <main>
       <router-view />

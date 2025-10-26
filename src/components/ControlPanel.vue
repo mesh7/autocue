@@ -1,19 +1,19 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 
-import Card from "primevue/card";
-import Button from "primevue/button";
-import Slider from "primevue/slider";
-import InputText from "primevue/inputtext";
+import Card from 'primevue/card'
+import Button from 'primevue/button'
+import Slider from 'primevue/slider'
+import InputText from 'primevue/inputtext'
 
-const value = ref(50);
+const value = ref(50)
 
 const playClicked = () => {
-  console.log("Play clicked");
-};
+  console.log('Play clicked')
+}
 const recordAudio = () => {
-  console.log("Record audio clicked");
-};
+  console.log('Record audio clicked')
+}
 </script>
 
 <template>
@@ -52,15 +52,8 @@ const recordAudio = () => {
 
 <style scoped>
 .primevue-card-with-blur {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.2
-  ); /* Semi-transparent white background */
-  backdrop-filter: blur(
-    8px
-  ); /* Apply blur effect to the background behind the card */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(8px); /* Apply blur effect to the background behind the card */
   border-radius: 2rem; /* Optional: rounded corners for the card */
   padding: 1rem;
   width: 40rem;
