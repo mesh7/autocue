@@ -32,13 +32,13 @@ import Button from "primevue/button";
       </div>
 
       <!-- Image -->
-      <!-- <div>
+      <div>
         <img
-          src="/src/assets/dummy.svg"
+          src="../../assets/dummy.svg"
           alt="Hero Image"
           class="w-full rounded-xl shadow-lg"
         />
-      </div> -->
+      </div>
     </div>
   </section>
 </template>
